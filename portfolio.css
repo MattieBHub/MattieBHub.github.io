@@ -170,39 +170,59 @@ h2{
 
 /* Links */
 
-li{
+a{
+    color: antiquewhite;
+    display: inline;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    color: antiquewhite;
     padding-left: 15px;
     padding-right: 15px;
-    display: inline;
     position: relative;
 }
 
-li a:link{
+a:link{
     color: antiquewhite;
     text-decoration: none;
 }
 
-li a:visited{
+a:hover {font-size:125%;}
+
+a:visited{
     color: antiquewhite;
 }
 
-li:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
+/* Underline animation for links*/
+
+a:after{
     background-color: antiquewhite;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.25s ease-out;
+    width: 100%;
 }
 
-li:hover:after{
+a:hover:after{
     transform: scaleX(1);
     transform-origin: center;
 }
+
+a.one{
+    color: antiquewhite;
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:after {color:#0000ff;}
+a.one:hover {font-size:150%; color:#ffcc00;}
+a.one:hover:after {color:#0000ff;}

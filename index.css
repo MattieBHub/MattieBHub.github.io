@@ -28,59 +28,76 @@ body{
 
 /* Nav Bar muckng about */
 
-nav{
-    display: flex;
-    justify-content: space-between;
+/* nav{ 
     align-items: center;
-    height: 6cm; 
+    display: flex;
     font-size: 100px;
+    height: 6cm; 
+    justify-content: space-between;
 }
+*/
 
 .navbar{
     flex:1;
-    text-align: center;
     font-size: 100px;
-
+    text-align: center;
 }
 
 /* Links */
 
-li{
+
+a{
+    color: antiquewhite;
+    display: inline;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    color: antiquewhite;
     padding-left: 15px;
     padding-right: 15px;
-    display: inline;
     position: relative;
 }
 
-li a:link{
+a:link{
     color: antiquewhite;
     text-decoration: none;
 }
 
-li a:visited{
+a:hover {font-size:50%;}
+
+a:visited{
     color: antiquewhite;
 }
 
 /* Underline animation for links*/
 
-li:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
+a:after{
     background-color: antiquewhite;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.25s ease-out;
+    width: 100%;
 }
 
-li:hover:after{
+a:hover:after{
     transform: scaleX(1);
     transform-origin: center;
 }
 
+/*
+@media only screen and (min-width: 800pt) {
+    .grid-item {
+      grid-template-columns: 40% 40%;
+      padding: 5px;
+      padding-left: 14%;
+      margin: auto
+    }
+    .grid-item > div {
+      margin: auto;
+      padding: 5px
+    }
+  }
+*/
