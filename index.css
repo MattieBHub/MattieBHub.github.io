@@ -1,54 +1,86 @@
-/* Richard Davies, Data Science for Economists */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-/* This is my first proper css file */
-
-
-/* Import a font, from google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-/* Set the background color for my page: can just put 'red' but also use hex r,g,b numbers*/
-/* White = 255,255,255 / Black = 0,0,0 */
-body{
-    background-color: rgb(255, 255, 255);
- 
-}
-
-
-/* Choose the appearance of the tags, h1, h3 and p: */
-/* Tags are like the variables that you can apply any style to */
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+/* FONTS */
+h3, p{
+    color:antiquewhite;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
-    
-.myWeek1{
-    margin: auto;
-    max-width: 600px;
-    background-color: bisque;
-    border-width: 10px;
-    border-style: dashed;
-    border-radius: 50px;
-    border-color: pink;
+
+h1{
+    color:antiquewhite;
+    font-family: 'Raleway', sans-serif;
+    text-align: Center;
+    font-size: 100px;
+
 }
 
-
-/* Set the appearance of the class, chart */
-.chart{
-    background-color:white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 370px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 10px; /*the higher this number the rounder*/
-    border-color: red;
+h2{
+    color:antiquewhite;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
 }
-    
 
-/* Set the appearance for a particular chart */
-#Chart1{
-    border-color: blue;   
+/* Background */
+body{
+    background-color: rgb(40, 107, 130);
 }
+
+/* Nav Bar muckng about */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6cm; 
+    font-size: 100px;
+}
+
+.navbar{
+    flex:1;
+    text-align: center;
+    font-size: 100px;
+
+}
+
+/* Links */
+
+li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: antiquewhite;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+    position: relative;
+}
+
+li a:link{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+li a:visited{
+    color: antiquewhite;
+}
+
+/* Underline animation for links*/
+
+li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: antiquewhite;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover:after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+

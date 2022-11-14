@@ -2,62 +2,182 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Title for the page -->
-    <title>Portfolio</title>
-
-    <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <title>Mattie's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <!--Favicon-->
+    <link rel="icon" href="images-bristol-logo.png">
+    <link rel="shortcut icon" href="images-bristol-logo.png" />
+    <link rel="apple-touch-icon" href="images-bristol-logo.png" />
 </head>
-<!-- 32 and 36 and the important ones -->
-<!-- The Only thing you really change for the hw is the filenames -->
 
 <body>
-    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="title">
+    <h2>Portfolio</h2>
+    <li style="list-style-type: none;"><a href="project.html">Project</a></li>
+    <li style="list-style-type: none;"><a href="index.html">Index</a></li>
+    <li style="list-style-type: none;"><a href="https://github.com/MattieBHub/MattieBHub.github.io">GitHub</a></li>
+    <p>  </p>
+</div>
+
     <div class="myWeek1">
-        <h1>Portfolio</h1>
+        
 
         <!-- WEEK 1 -->
         <h1>Week 1 - Tasks</h1>
-        <h2>Korean Population Data</h2>
-        
+
+        <h3>Korean Population Data</h3>
+
         <h3>The older they are...</h3>
-        <p>The first chart tracks Koreas aging population, compared to other countries.</p>
-        <div class="chart" id="Chart3"></div>
+        <p>The first chart tracks Koreas current aging population with future predicitions, compared to other countries.</p>
+        <div class="chart" id="Chart1"></div>
 
         <h3>... the harder they fall</h3>
-        <p>My second chart tracks Korea's declining population, compared to other countries</p>
-        <div class="chart" id="Chart4"> </div>
+        <p>My second chart tracks Korea's current declining population with future predicitions, compared to other countries</p>
+        <div class="chart2" id="Chart2"> </div>
+        <p> </p>
+
+    </div>
+
+    <div class="myWeek2">
+
         
         <!-- WEEK 2 -->
         <h1>Week 2 - Tasks</h1>
-        <h3>IMF Lending Outstanding</h3>
-        <p>My third chart shows IMF Outstanding Lending credit over time</p>
-        <div class="chart" id="Chart5"> </div>
+
+        <h3>IMF Lending Outstanding Credit</h3>
+        <p>My third chart shows the IMF's Outstanding Lending credit over time</p>
+        <p>Graph from the Financial Times</p>
+        <div class="chart" id="Chart3"> </div>
+
+    
+        <h3>IMF Lending Outstanding Credit - Personalised</h3>
+        <p>My fourth chart shows the IMF's Outstanding Lending credit over time relative to World GDP</p>
+        <div class="chart" id="Chart4"> </div>
+
+        <p>If the only deciding factor of risk was IMF Lending,
+             then 1984 would be the riskiest year according to the Fourth Graph</p>
+
+    </div>
+
+    <div class="myWeek3">
+        <!-- WEEK 3-->
+        <h1>Week 3 - Tasks</h1>
+
+        <h3>My Data Encoded Chart</h3>
+        <p>My fifth chart shows General Government Net Debt, as a percentage of their GDP </p>
+        <div class="chart5_6" id="Chart5"> </div>
+        <p> </p>
+
+        <h3>My Data Encoded Chart - Revisualised</h3>
+        <p>My sixth chart shows my fifth chart revisualised as a line chart</p>
+        <div class="chart5_6" id="Chart6"> </div>
+        <p> </p>
+
+        <p>The sixth chart was revisualised 
+            as an line chart as 
+            it lets you see the 
+            change in different countries clearer.</p>
+        <p> </p>
+
     </div> 
+
+    <div class="myWeek4">
+        <!-- WEEK 4-->
+        <h1>Week 4 - Tasks</h1>
+
+        <p>The <a href="https://colab.research.google.com/drive/14oLjgXXNYwWfdTNbCLggC4pP77l39s0o#scrollTo=xO7xgQCj9JTd">
+            Colab</a> where I analysed the data</p>
+
+        <h3> Scraped Chart</h3>
+        <p> Top 100 Streamed Artists on Spotify</p>
+        <div class="chart7" id="Chart7"> </div>
+        <p> I choose the website Chartmasters 
+            as it is updated everyday 
+            and had a clear chart 
+            for their data to be 
+            scraped from</p>
+        <p> </p>
+
+    </div> 
+
+    <div class="myWeek5">
+        <!-- WEEK 5-->
+        <h1>Week 5 - Tasks</h1>        
+        <h1>Dashboard</h1>
+        <h3>UK Trade from 1940s to 2020s</h3>
+
+        <div class="grid">
+            <div class = chartboard id = "Chart8"></div>
+            <div class = chartboard id = "Chart9"></div>
+            <div class = chartboard id = "Chart10"></div>  
+            <div class = chartboard id = "Chart11"></div>
+            <div class = chartboard id = "Chart12"></div>
+            <div class = chartboard id = "Chart13"></div>
+            <div class = chartboard id = "Chart14"></div>
+            <div class = chartboard id = "Chart15"></div>
+        </div>
+        
+        <div class="grid2">
+            <div class = chartboard id = "Chart16"></div>
+        </div>
+
+        <p>The <a href="https://colab.research.google.com/drive/1xRGf6QuKJjpVCqZF77W-2jtihvA7IYlL#scrollTo=DCCczEMwmaK1">Colab</a> where I used the ONS API to download all the data for these graphs using a loop</p>
+
+    </div> 
+
 </body>
 
 
 <script>
-    //Define charts:
-    var myChart3 = "chart3_agingPopulation.json";
-    var myChart4 = "chart4_decliningPopulation.json";
-    var myChart5 = "chart5_imflending.json"
+
+    // Define charts:
+    var myChart1 = "chart1_agingPopulation.json";
+    var myChart2 = "chart2_decliningPopulation.json";
+    var myChart3 = "chart3_imfLending.json"
+    var myChart4 = "chart4_imfLendingFixed.json"
+    var myChart5 = "chart5_koreaDebt.json"
+    var myChart6 = "chart6_koreaDebt.json"
+    var myChart7 = "chart7_musicStreams.json"
+    var myChart8 = "chart8_TIGE.json"
+    var myChart9 = "chart9_TIGI.json"
+    var myChart10 = "chart10_TIGB.json"
+    var myChart11 = "chart11_TISE.json"
+    var myChart12 = "chart12_TISI.json"
+    var myChart13 = "chart13_TISB.json"
+    var myChart14 = "chart14_TTE.json"
+    var myChart15 = "chart15_TTI.json"
+    var myChart16 = "chart16_TTB.json"
 
     // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+
+
 </script>
 
 </html>

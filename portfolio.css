@@ -1,0 +1,208 @@
+
+/* Import a font, from google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.title{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 35px;
+}
+
+body{
+    background-color: rgb(40, 107, 130);
+}
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+/* Tags are like the variables that you can apply any style to */
+h1, h3, p{
+    color:rgb(17, 17, 17);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+h2{ 
+    color:antiquewhite;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* Task Background */
+/* Week 1 = CAFFB9, Week 2 = AEF78E, Week 3 = 79E28E, Week 4 = #58da72 */
+
+.myWeek1{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(202,255,185);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek2{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(174,247,142);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek3{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(121,226,142); 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek4{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(113, 210, 142); 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek5{
+    margin: auto;
+    max-width: 625px;
+    background-color: rgb(88,193,114); 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Set the appearance of the class, chart */
+.chart{
+    background-color:white;
+    display: block;
+    margin-left: 120px;
+    width: 370px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px; /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+}
+
+/* Appearances for particular charts */
+
+.chart2{
+    background-color:white;
+    display: block;
+    margin-left: 95px;
+    width: 425px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px; /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+}
+
+.chart5_6{
+    background-color:white;
+    display: block;
+    margin-left: 75px;
+    width: 450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px; /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+}
+
+.chart7{
+    background-color:white;
+    display: block;
+    margin-left: 110px;
+    width: 390px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px; /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+}
+
+
+.chartboard{
+    background-color:white;
+    display: block;
+    margin: auto;
+    margin-bottom: 10%;
+    max-width: 1000px;
+    border-width: 3px;
+    border-style: outset; 
+    border-radius: 5px;  /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+    text-align: center; 
+}
+
+/* Griddy */
+
+.grid{
+    display: grid;
+    max-width: 800px; 
+    grid-column-gap: 1px;
+    grid-row-gap: 3px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid > div{
+    background-color: #ffffff;
+    width: 300px;
+}
+
+.grid2{
+    display: grid;
+    max-width: 800px; 
+    grid-column-gap: 1px;
+    grid-row-gap: 3px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.grid2 > div{
+    background-color: #ffffff;
+    width: 300px;
+}
+
+/* Links */
+
+li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: antiquewhite;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+    position: relative;
+}
+
+li a:link{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+li a:visited{
+    color: antiquewhite;
+}
+
+li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: antiquewhite;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover:after{
+    transform: scaleX(1);
+    transform-origin: center;
+}

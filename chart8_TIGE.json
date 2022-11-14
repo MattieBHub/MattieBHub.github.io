@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+        "title": {
+      "text": "Trade in Goods: Exports",
+  
+      "subtitle": [
+      "£ million - Seasonally Adjusted", 
+      "Source: ONS"],
+  
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_ONS_BOKG.json",
+    "format": {
+      "type": "json",
+      "property": "years"}
+    },
+  
+    "mark":{
+      "type": "line",
+      "color":"#ff9900"
+     },
+  
+     "height":200,
+     "width":200,
+
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "title": null},
+      "y": {"field": "value", "type": "quantitative", "title": "Exports"}
+    }
+  }
+  
