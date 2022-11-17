@@ -282,3 +282,32 @@ a.one:visited {color:#0000ff;}
 a.one:after {color:#0000ff;}
 a.one:hover {font-size:150%; color:#ffcc00;}
 a.one:hover:after {color:#0000ff;}
+
+/* Screen Sizes*/
+
+@media only screen and (min-width: 250px) {
+  .grid_items {
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+
+  .wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+	  padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  .rubric {
+    text-align: left;
+  }
