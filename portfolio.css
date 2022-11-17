@@ -132,7 +132,7 @@ h2{
 
 
 /* Set the appearance of the class, chart */
-.chart{
+/* .chart{
     background-color:white;
     display: block;
     margin-left: 120px;
@@ -141,7 +141,7 @@ h2{
     border-style: solid;
     border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
-}
+} */
 
 /* Appearances for particular charts */
 
@@ -286,7 +286,7 @@ a.one:hover:after {color:#0000ff;}
 /* Screen Sizes*/
 
 @media only screen and (min-width: 250px) {
-  .grid_items {
+  .chart {
     grid-template-columns: 100%;
     max-width: 420px; 
     margin: 0 auto 0 auto !important;
@@ -305,7 +305,7 @@ a.one:hover:after {color:#0000ff;}
     grid-row-gap: 40px;
     text-align: center;
   }
-  .grid_items > div {
+  .chart > div {
     padding: 10px;
   }
   .rubric {
