@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 580,
+    "height": 550,
+
+    "title": {
+        "text": "Map of the Europe",
+        "color": "black"},
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_europebase.json",
+      "format":{"property": "features"}},
+  
+      "projection":{
+        "type":"azimuthalEquidistant",
+        "scale": 750,
+        "center": [12,53]
+        },
+  
+          "mark":{
+              "type":"geoshape",
+              "fill":"orange",
+              "stroke": "black",
+              "strokeWidth": 0.35
+          },
+  
+          "encoding":{
+              "tooltip":{"field":"properties.name", "type": "nominal"}
+          }
+  }

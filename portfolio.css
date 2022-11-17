@@ -79,6 +79,58 @@ h2{
     border-color: rgb(0, 0, 0);
 }
 
+.myWeek7{
+    margin: auto;
+    max-width: 1000px;
+    background-color: #58C199; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek8{
+    margin: auto;
+    max-width: 600px;
+    background-color: #58C1C1; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek9{
+    margin: auto;
+    max-width: 600px;
+    background-color: #58B4E1; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek10{
+    margin: auto;
+    max-width: 600px;
+    background-color: #58A0FF; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.myWeek11{
+    margin: auto;
+    max-width: 600px;
+    background-color: #6785FF; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+
+
 /* Set the appearance of the class, chart */
 .chart{
     background-color:white;
@@ -124,6 +176,30 @@ h2{
     border-style: solid;
     border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+}
+
+.chart17{
+    background-color:white;
+    display: block;
+    margin-left: 200px;
+    max-width: 600px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px; /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+    width: 5000px;
+}
+
+.chart18{
+    background-color:white;
+    display: block;
+    margin-left: 125px;
+    max-width: 750px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px; /*the higher this number the rounder*/
+    border-color: rgb(40, 107, 130);
+    width: 5000px;
 }
 
 
@@ -172,11 +248,10 @@ h2{
 
 a{
     color: antiquewhite;
-    display: inline;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
 }
 
@@ -191,25 +266,6 @@ a:visited{
     color: antiquewhite;
 }
 
-/* Underline animation for links*/
-
-a:after{
-    background-color: antiquewhite;
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.25s ease-out;
-    width: 100%;
-}
-
-a:hover:after{
-    transform: scaleX(1);
-    transform-origin: center;
-}
 
 a.one{
     color: antiquewhite;
