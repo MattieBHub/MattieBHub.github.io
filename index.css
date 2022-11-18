@@ -21,6 +21,18 @@ h2{
     text-align: left;
 }
 
+@media screen and (min-width: 600px) {
+    .h1 {
+      font-size: 80px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .h1 {
+      font-size: 30px;
+    }
+}
+
 /* Background */
 body{
     background-color: rgb(40, 107, 130);
