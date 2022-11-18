@@ -12,25 +12,13 @@ h1{
     font-family: 'Raleway', sans-serif;
     text-align: Center;
     font-size: 100px;
-
 }
+
 
 h2{
     color:antiquewhite;
     font-family: 'Raleway', sans-serif;
     text-align: left;
-}
-
-@media screen and (min-width: 600px) {
-    .h1 {
-      font-size: 80px;
-    }
-}
-  
-@media screen and (max-width: 600px) {
-    .h1 {
-      font-size: 30px;
-    }
 }
 
 /* Background */
@@ -72,7 +60,7 @@ a:visited{
 }
 
 
-/*
+
 @media only screen and (min-width: 800pt) {
     .grid-item {
       grid-template-columns: 40% 40%;
@@ -85,4 +73,3 @@ a:visited{
       padding: 5px
     }
   }
-*/
