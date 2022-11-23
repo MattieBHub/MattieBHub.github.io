@@ -284,23 +284,17 @@ a.one:hover {font-size:150%; color:#ffcc00;}
 a.one:hover:after {color:#0000ff;}
 
 /* Phone Screen Stuff */
+
 @media only screen and (min-width: 250px) {
     .chart {
         grid-template-columns: 100%;
         max-width: 420px; 
-        margin: 0 auto 0 auto !important;
+        margin: 95 auto 95 auto !important;
         padding: 0 5 0 5; 
         grid-column-gap: 10px;
         grid-row-gap: 40px;
         text-align: center;
-        background-color:white;
-        display: block;
-        margin-left: 120px;
-        width: 370px;
-        border-width: 3px;
-        border-style: solid;
-        border-radius: 5px; /*the higher this number the rounder*/
-        border-color: rgb(40, 107, 130);
+        
       }
         
       .chart > div {
@@ -315,14 +309,6 @@ a.one:hover:after {color:#0000ff;}
       grid-column-gap: 10px;
       grid-row-gap: 40px;
       text-align: center;
-      background-color:white;
-      display: block;
-      margin-left: 120px;
-      width: 370px;
-      border-width: 3px;
-      border-style: solid;
-      border-radius: 5px; /*the higher this number the rounder*/
-      border-color: rgb(40, 107, 130);
   }
   
     .chartboard > div {
