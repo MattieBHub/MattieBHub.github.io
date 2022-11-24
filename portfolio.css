@@ -1,6 +1,13 @@
 
 /* Import a font, from google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    background-color: rgb(40, 107, 130);
+}
+
+/* Font Style */
 
 .title{
     color: antiquewhite;
@@ -8,12 +15,6 @@
     font-size: 35px;
 }
 
-body{
-    background-color: rgb(40, 107, 130);
-}
-
-/* Choose the appearance of the tags, h1, h3 and p: */
-/* Tags are like the variables that you can apply any style to */
 h1, h3, p{
     color:rgb(17, 17, 17);
     font-family: 'Raleway', sans-serif;
@@ -26,12 +27,35 @@ h2{
     text-align: center;
 }
 
-/* Task Background */
+/* Text shit */
+/* 
+#text {
+    position: static;
+    top: 80px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+    padding: 0px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+#text2 {
+    position: static;
+    top: 80px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+    padding: 0px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+} */
+
+/* Week Background */
 /* Week 1 = CAFFB9, Week 2 = AEF78E, Week 3 = 79E28E, Week 4 = #58da72 */
 
 .myWeek1{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: rgb(202,255,185);
     border-width: 5px;
     border-style: solid;
@@ -41,7 +65,7 @@ h2{
 
 .myWeek2{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: rgb(174,247,142);
     border-width: 5px;
     border-style: solid;
@@ -51,7 +75,7 @@ h2{
 
 .myWeek3{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: rgb(121,226,142); 
     border-width: 5px;
     border-style: solid;
@@ -61,7 +85,7 @@ h2{
 
 .myWeek4{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: rgb(113, 210, 142); 
     border-width: 5px;
     border-style: solid;
@@ -71,7 +95,7 @@ h2{
 
 .myWeek5{
     margin: auto;
-    max-width: 625px;
+    max-width: 1000px;
     background-color: rgb(88,193,114); 
     border-width: 5px;
     border-style: solid;
@@ -91,7 +115,7 @@ h2{
 
 .myWeek8{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: #58C1C1; 
     border-width: 5px;
     border-style: solid;
@@ -129,98 +153,138 @@ h2{
     border-color: rgb(0, 0, 0);
 }
 
+/* Container */
+/* 
+.container {
+    align-content: center;
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    max-width: 1000px; 
+    justify-content: center;
+    padding: 20px;
+}
 
+.container1 {
+    align-content: center;
+    column-gap: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 1000px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+}  
+*/
 
 /* Set the appearance of the class, chart */
+
 .chart{
     background-color:white;
-    display: block;
-    margin-left: 120px;
-    width: 370px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%;
+    max-width: 1000px;
+    text-align: center;
+    width: 350px;
 }
 
 /* Appearances for particular charts */
 
 .chart2{
     background-color:white;
-    display: block;
-    margin-left: 95px;
-    width: 425px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 1000px;
+    text-align: center;
+    width: 425px;
 }
 
 .chart5_6{
     background-color:white;
-    display: block;
-    margin-left: 75px;
-    width: 450px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 1000px;
+    text-align: center;
+    width: 450px;
 }
 
 .chart7{
     background-color:white;
-    display: block;
-    margin-left: 110px;
-    width: 390px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 1000px;
+    text-align: center;
+    width: 390px;
 }
 
 .chart17{
     background-color:white;
-    display: block;
-    margin-left: 200px;
-    max-width: 600px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 600px;
+    text-align: center;
     width: 5000px;
 }
 
 .chart18{
     background-color:white;
-    display: block;
-    margin-left: 125px;
-    max-width: 750px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px; /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 750px;
+    text-align: center;
     width: 5000px;
 }
 
-
-.chartboard{
+.dashboard{
     background-color:white;
-    display: block;
-    margin: auto;
-    margin-bottom: 10%;
-    max-width: 1000px;
-    border-width: 3px;
-    border-style: outset; 
-    border-radius: 5px;  /*the higher this number the rounder*/
     border-color: rgb(40, 107, 130);
-    text-align: center; 
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 1000px;
+    text-align: center;
+    width: 425px;
 }
 
 /* Griddy */
 
 .grid{
     display: grid;
-    max-width: 800px; 
+    max-width: 1000px; 
     grid-column-gap: 1px;
     grid-row-gap: 3px;
     grid-template-columns: repeat(2,1fr);
@@ -233,7 +297,7 @@ h2{
 
 .grid2{
     display: grid;
-    max-width: 800px; 
+    max-width: 1000px; 
     grid-column-gap: 1px;
     grid-row-gap: 3px;
     grid-template-columns: repeat(1,1fr);
@@ -284,24 +348,26 @@ a.one:hover {font-size:150%; color:#ffcc00;}
 a.one:hover:after {color:#0000ff;}
 
 /* Phone Screen Stuff */
-
+/* 
 @media only screen and (min-width: 250px) {
     .chart {
-        grid-template-columns: 100%;
-        max-width: 420px; 
-        margin: 95 auto 95 auto !important;
-        padding: 0 5 0 5; 
+        display: inline-block;
         grid-column-gap: 10px;
         grid-row-gap: 40px;
+        grid-template-columns: 100%;
+        justify-content: center !important;
+        margin: 0 auto 0 auto !important; 
+        max-width: 420px; 
+        padding: 0 5 0 5;  
         text-align: center;
+        z-index: 0;
+    }
         
-      }
-        
-      .chart > div {
+    .chart > div {
         padding: 10px;
     }
 
-    .chartboard {
+    .dashboard {
       grid-template-columns: 100%;
       max-width: 420px; 
       margin: 0 auto 0 auto !important;
@@ -309,9 +375,28 @@ a.one:hover:after {color:#0000ff;}
       grid-column-gap: 10px;
       grid-row-gap: 40px;
       text-align: center;
-  }
+    }
   
-    .chartboard > div {
+    .dashboard > div {
       padding: 10px;
-  }
-}
+    }
+
+    
+}  
+
+@media only screen and (min-width: 800px) {
+    .chart{
+      grid-template-columns: 47.5% 47.5%;
+      max-width: 900px; 
+      margin: 0 auto 0 auto !important;
+      padding: 0 5 0 5; 
+      grid-column-gap: 10px;
+      grid-row-gap: 40px;
+      text-align: left;
+    }
+
+    .chart > div {
+      padding: 10px;
+    }
+} */
+
