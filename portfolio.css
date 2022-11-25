@@ -357,8 +357,8 @@ a.one:hover:after {color:#0000ff;}
         grid-row-gap: 3px;
         grid-template-columns: repeat(1,1fr);
     }
-    
-        .chart2{
+
+    .chart2{
         background-color:white;
         border-color: rgb(40, 107, 130);
         border-radius: 5px; 
@@ -370,7 +370,6 @@ a.one:hover:after {color:#0000ff;}
         max-width: 1000px;
         text-align: center;
         width: 350px;
-        height: 350px;
     }
 }
 /* 
