@@ -1,9 +1,9 @@
 Country,Days,Days missed
-England - Classroom Days,In classroom,80
-England - Classroom Days,Not in classroom,110
-Northern Ireland - Classroom Days,In classroom,71
-Northern Ireland - Classroom Days,Not in classroom,119
-Scotland - Classroom Days,In classroom,71
-Scotland - Classroom Days,Not in classroom,119
-Wales - Classroom Days,In classroom,66
-Wales - Classroom Days,Not in classroom,124
+England,In classroom,80
+England,Not in classroom,110
+Northern Ireland,In classroom,71
+Northern Ireland,Not in classroom,119
+Scotland,In classroom,71
+Scotland,Not in classroom,119
+Wales,In classroom,66
+Wales,Not in classroom,124
