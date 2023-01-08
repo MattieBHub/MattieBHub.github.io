@@ -1,9 +1,9 @@
 Country,Days,Days missed
-England - Schooling Days,Equivalent to schooling,129
-England - Schooling Days,Of schooling lost,61
-Northern Ireland - Schooling Days,Equivalent to schooling,129
-Northern Ireland - Schooling Days,Of schooling lost,61
-Scotland - Schooling Days,Equivalent to schooling,126
-Scotland - Schooling Days,Of schooling lost,64
-Wales - Schooling Days,Equivalent to schooling,124
-Wales - Schooling Days,Of schooling lost,66
+England,Equivalent to schooling,129
+England,Of schooling lost,61
+Northern Ireland,Equivalent to schooling,129
+Northern Ireland,Of schooling lost,61
+Scotland,Equivalent to schooling,126
+Scotland,Of schooling lost,64
+Wales,Equivalent to schooling,124
+Wales,Of schooling lost,66
