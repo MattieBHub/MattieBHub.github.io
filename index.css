@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* FONTS */
-h3, p{
+h3{
+    color:rgb(40, 107, 130);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+p{
     color:antiquewhite;
     font-family: 'Raleway', sans-serif;
     text-align: center;

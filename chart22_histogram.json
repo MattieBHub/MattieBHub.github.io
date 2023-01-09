@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "AQA GCSE result statistics, June 2022",
+       "subtitle":"Cumulative percentage by grade (%) - Source: AQA" ,
+       "subtitleFontStyle":"italic",
+       "subtitleFontSize":10,
+       "anchor": "start",
+       "color": "black"
+    },
+  
+      "data": {"values":[{"Grade": "JU", "Subject": "Economics", "Cumulative (%)": "100"}, {"Grade": "I1", "Subject": "Economics", "Cumulative (%)": "99.4"}, {"Grade": "H2", "Subject": "Economics", "Cumulative (%)": "97.8"}, {"Grade": "G3", "Subject": "Economics", "Cumulative (%)": "94.2"}, {"Grade": "F6", "Subject": "Economics", "Cumulative (%)": "86.3"}, {"Grade": "E5", "Subject": "Economics", "Cumulative (%)": "76.8"}, {"Grade": "D6", "Subject": "Economics", "Cumulative (%)": "62.3"}, {"Grade": "C7", "Subject": "Economics", "Cumulative (%)": "43.1"}, {"Grade": "B8", "Subject": "Economics", "Cumulative (%)": "28"}, {"Grade": "A9", "Subject": "Economics", "Cumulative (%)": "12.8"}, {"Grade": "JU", "Subject": "Maths", "Cumulative (%)": "100"}, {"Grade": "I1", "Subject": "Maths", "Cumulative (%)": "97.6"}, {"Grade": "H2", "Subject": "Maths", "Cumulative (%)": "90.5"}, {"Grade": "G3", "Subject": "Maths", "Cumulative (%)": "78.2"}, {"Grade": "F6", "Subject": "Maths", "Cumulative (%)": "63.5"}, {"Grade": "E5", "Subject": "Maths", "Cumulative (%)": "45.9"}, {"Grade": "D6", "Subject": "Maths", "Cumulative (%)": "29.4"}, {"Grade": "C7", "Subject": "Maths", "Cumulative (%)": "19.1"}, {"Grade": "B8", "Subject": "Maths", "Cumulative (%)": "11.5"}, {"Grade": "A9", "Subject": "Maths", "Cumulative (%)": "4.3"}, {"Grade": "JU", "Subject": "English Language", "Cumulative (%)": "100"}, {"Grade": "I1", "Subject": "English Language", "Cumulative (%)": "98.9"}, {"Grade": "H2", "Subject": "English Language", "Cumulative (%)": "95.7"}, {"Grade": "G3", "Subject": "English Language", "Cumulative (%)": "88.5"}, {"Grade": "F6", "Subject": "English Language", "Cumulative (%)": "70.5"}, {"Grade": "E5", "Subject": "English Language", "Cumulative (%)": "54.3"}, {"Grade": "D6", "Subject": "English Language", "Cumulative (%)": "36.4"}, {"Grade": "C7", "Subject": "English Language", "Cumulative (%)": "20.3"}, {"Grade": "B8", "Subject": "English Language", "Cumulative (%)": "10.2"}, {"Grade": "A9", "Subject": "English Language", "Cumulative (%)": "3.6"}]},
+  
+    "width":400,
+    "height": 300,
+  
+    "mark": {
+      "type": "area", "opacity": 0.75,
+          "line": {
+        "color": "black"
+      }
+    },
+  
+    "encoding": {
+      "x": {"field": "Grade", "type": "ordinal", "title": "", "sort": "ascending", "axis":{"labelExpr": "datum.label[1]"}
+      },
+  
+      "y": {"field": "Cumulative (%)", "type": "quantitative", "title": "", "stack": false},
+  
+      "color": {"field": "Subject", "type": "nominal", "scale": {"scheme": "redblue"}}
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

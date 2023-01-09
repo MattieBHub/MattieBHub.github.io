@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 4: GCSE outcomes at grade 4/C and above, 2016 - 2022 ",
+    "subtitle": "Percentage of english students who got all 4/C or above (%) -  Source: Ofqual",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      { "Year": "2016", "Percentage at grade 4/C or above": 66.6, "z": 45, "zz": ""},
+      { "Year": "2017", "Percentage at grade 4/C or above": 66.1, "z": 45, "zz": ""},
+      { "Year": "2018", "Percentage at grade 4/C or above": 66.6, "z": 45, "zz": ""},
+      { "Year": "2019", "Percentage at grade 4/C or above": 67.0, "z": 45, "zz": ""},
+      { "Year": "2020", "Percentage at grade 4/C or above": 75.9, "z": 75.9, "zz": "Covid Year"},
+      { "Year": "2021", "Percentage at grade 4/C or above": 76.9, "z": 76.9, "zz": "Covid Year"},
+      { "Year": "2022", "Percentage at grade 4/C or above": 73.0, "z": 45, "zz": ""}
+    ]
+  },
+  "width": 400,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": true,
+        "color": "turquoise"
+      },
+      "encoding": {
+        "x": { "field": "Year", "type": "ordinal", "title": "" },
+        "y": {
+          "field": "Percentage at grade 4/C or above",
+          "type": "quantitative",
+          "title": "",
+          "scale": { "domain": [45, 90] }
+        }
+      }
+    },
+    {
+      "mark": {"type": "rule","color": "goldenrod",
+        "size":1,
+        "strokeDash": [3, 4]},
+      "encoding": {
+        "x": { "field": "Year", "type": "ordinal", "title": "" },
+        "y": {
+          "field": "z",
+          "type": "quantitative",
+          "title": "",
+          "scale": { "domain": [45, 90] }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": {"expr": "datum.z > 45 ? 'right' : 'right'"},
+        "dx": {"expr": "datum.z < 0 ? 2 : 90"},
+        "dy": {"expr": "datum.z < 0 ? 2 : -70"}
+      },
+      "encoding": {"text": {"field": "zz", "type": "nominal"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": {"expr": "datum.z > 45 ? 'right' : 'right'"},
+        "dx": {"expr": "datum.z < 0 ? 2 : 140"},
+        "dy": {"expr": "datum.z < 0 ? 2 : -80"}
+      },
+      "encoding": {"text": {"field": "zz", "type": "nominal"}}
+    }
+  ]
+}

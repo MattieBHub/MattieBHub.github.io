@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
 
-    <link rel="stylesheet" href="project.css">
     <title>Mattie's Project</title>
+    <link rel="stylesheet" href="project.css">
 
+    <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
@@ -18,25 +20,137 @@
     <link rel="icon" href="images-bristol-logo.png">
     <link rel="shortcut icon" href="images-bristol-logo.png" />
     <link rel="apple-touch-icon" href="images-bristol-logo.png" />
-
 </head>
 
 <body>
     <div class="title">
-    <h1>Project time bb</h1>
+        <h2>Mattie's Project</h2>
+        <a style="list-style-type: none;" href="portfolio.html">Portfolio</a>
+        <a style="list-style-type: none;" href="index.html">Index</a>
+        <a style="list-style-type: none;" href="https://github.com/MattieBHub/MattieBHub.github.io">GitHub</a>
+        <p> </p>
     </div>
 
-    <div class="navbar">
-    <a style="list-style-type: none;" href="portfolio.html">Portfolio</a>
-    <a style="list-style-type: none;" href="index.html">Index</a>
-    <a style="list-style-type: none;" href="https://github.com/MattieBHub/MattieBHub.github.io">GitHub</a> 
-
-    <p>  </p>
     
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia iusto explicabo sunt. Quas, ex enim voluptas temporibus totam at pariatur atque, quibusdam laborum laboriosam incidunt modi aperiam sit? Labore maxime ex dolores quidem est repudiandae quod amet sapiente blanditiis odio. At numquam cupiditate, maxime autem quae impedit corrupti ipsum, laborum qui eum veniam vitae aliquam dolore quasi sapiente possimus quo doloribus voluptas dignissimos? Vero quo laudantium, modi, rerum fugit quis suscipit molestias saepe distinctio itaque perferendis beatae excepturi in unde voluptatem ab libero doloribus. Quia animi non illum, veniam iusto eaque blanditiis aliquid modi nemo nihil commodi, placeat, adipisci esse cumque excepturi culpa voluptatum recusandae minima ad laborum sed eius dolore cupiditate reprehenderit. Ut dolores aperiam nam ducimus possimus quis ea quo voluptas rem id fugiat deleniti maiores deserunt quas omnis illum cumque, fugit, repellat modi, obcaecati quibusdam! Ipsa deleniti eos libero nemo, repellat neque at sint asperiores, magnam iusto ut voluptatum architecto saepe dolorum. Perferendis cumque fuga ratione exercitationem unde accusantium dolores nobis, quis blanditiis labore illum aperiam atque nemo esse amet delectus voluptates inventore et doloribus quisquam! Pariatur illo non enim laudantium, recusandae asperiores! Nisi, impedit labore ipsum incidunt, officiis libero sunt, at laborum rem dolore vitae.</p>
-    
-    <!-- <p>Lorem200<p> -->
+    <div class="chapter1">
+        <h1>The effect of the Coronavirus on student learning and their outcomes</h1>
+        <p> 
+            During the COVID-19 pandemic, education around the world was significantly impacted. 
+            Teachers and Students couldn't attend classes and had to learn to learn online, 
+            which raised many questions about lack and quality of learning experienced during this time.
+            This project aims to investigate school closures due to the pandemic, focusing on the UK, 
+            and how grades were awarded when students weren't allowed to go in for exams.
+        </p>
+        <p>
+            UK schools first closed all doors nationwide mid-March 2020. 
+            Figure 1 studies when this was in the overall timeline of the pandemic<a class="one" href="https://colab.research.google.com/drive/10bBZ2ckjxVVHTo2FZOVpcKJ6aRzK29Ny">Colab.</a>
+            Figure 1 is created using the <a class="one" href="https://colab.research.google.com/drive/10bBZ2ckjxVVHTo2FZOVpcKJ6aRzK29Ny">covid19api.com</a> api and shows that this was relatively near the start of the pandemic. 
+        </p>
+        <div class="map" id="Charta" style = "display:block"></div>
+        <p>    
+            Different countries reaction times to the pandemic can be viewed using the Figure 2, 
+            showing that globally in-person education was mostly totally stopped for long stretches 
+            of time in 2020, shown as earlier in pandemic when viewed in tandem with Figure 1, and opened up a lot more in 2021 and 2022.
+        </p>
+        <p><a class="one" href="https://colab.research.google.com/drive/1uO8n17vplTbHKepNhvmkzRVcKpdK-pJQ">Map Colab</a></p>
+        <div class="map" id="Chartb" style = "display:block"></div>
+        <p>
+            The UK students missed a vast amount of teaching time when schools first shut and online teaching 
+            was being developed, missing a total of 110 in classroom days (Figure 3b) and effectively missing 
+            61 days of school time between March 2020 and April 2021 (Figure 3a), 
+            which is nearly a 1/3 of a normal 190 day school year.
+        </p>
+        <div class="chartlong" id="Chartc" style = "display:block"></div>
+        <div class="chartlong" id="Chartd" style = "display:block"></div>
+        <p>
+            With all this teaching being lost to the pandemic, soon came the question of how were the
+            examinations going to be handled. Ofqual intially attempted to award 'calculated' grades 
+            based on a rank order of students within the Grade boundaries, when this failed to satisfy public opinion
+            they awarded the students their predicted grades.
+        </p>
+        <p>
+            Figure 4 demonstrates that their was a sudden jump from around 67% to 76% of English students who got 4/C and above
+            in the years when their exam grades were given. This trend continues into 2021 and may have had lingering effects as 2022's
+            grades are comparatively higher then the years before the pandemic. Further research could investigate reasons behind this.
+        </p>
+        <div class="chart4-C" id="Charte" style = "display:block"></div>
+        <p><a class="one" href="https://colab.research.google.com/drive/10Gqa1pVlkE92Ydw2lp7BX9nvz8-BCBdV#scrollTo=ks58bm3OMHUh">Colab</a>
+            where I scraped the data for Figure 4
+        </p>
+        <p>
+            Figure 5 shows in more detail the grade distribution in the years surrounding and encompassing the years when the
+            grades where given. Their is slight increase in the highest grades but bigger increases are witnessed in mid-range grades
+            4-6.
+            There is also decreases in proportion of 1-3 between 2020-2021, perhaps suggesting that teachers knew that the predicted grades 
+            would be given, compared to 2020 where they thought they were going to be awarding 'calculated' grades', so boosted their students grades. 
+            Further research could investigate this.
+            Figure 4 & 5 show that more students got higher grades after & during years effective and during the COVID-19 pandemic, despite previous
+            graphs showing they got less school time then previous years. 
+        </p>
+        <div class="chartresults" id="Chartf" style = "display:block"></div>
+        <h3>Conclusions:</h3>
+        <p>
+            Overall, COVID-19 has had a significant impact on global education and has a presented a number of challenges
+            to the UK education system. Despite missing more school then previous years, students who took exams, or were supposed to, 
+            got higher percentage of students and higher grades. This suggests that the giving of predicted grades, perhaps inflated 
+            the amount of people who passed their exams compared to previous years. These findings can inform future research on possible
+            inflation of grades and lasting effects of COVID-19 on education.
+        </p>
+    </div>
+    <br>
+    <div class="chapter2">
 
-</div>
+        <h3>Challenges and data:</h3>
+        <p>Figure 1 - The API menace: </p>
+        <p>The API I used didn't come with a rolling 7 day average, or even daily new cases data. 
+            So I automated manipulating the daily total and minused the previous day's total to create new cases data, 
+            and further used this to create a rolling average as the new cases data.
+            UK data included data on all it's provinces such as Gibaltar, had to access the data seperately from the other 
+            countries as it sometimes timed out requests due to its size, then dropped the province data.
+            Merged the different countries json datasets using pandas.
+        </p>
+        <p>Figure 2 - Attack of the sliders: </p>
+        <p>
+            Mismatched Country names between the map and the data. Fixed by converting data names to match the map names.
+            Adding sliders to this graph was a challenge, vega didn't like dd-mm-yyyy being on one slider
+            so I split them into 3 dd mm yyyy sliders.
+        </p>
+        <p>
+            Figure 3 - Revenge of the bar charts:
+        </p>
+        <p>
+            Made a dataset dased on values from LSE paper - Major, L. E., Eyles, A., & Machin, S. (2021, July). Learning loss since lockdown: variation across the home nations.
+        </p>
+        <p>
+            Figure 4 - A New Scraper:
+        </p>
+        <p>
+            Simple Scraped from the gov.uk website, used pandas 
+        </p>
+        <p>
+            Figure 5 - The AQA strike back
+        </p>
+        <p>
+            Combined datasets from AQA website
+        </p>
+    </div>
+
 </body>
+
+<script>
+    var myCharta = "charta_api_fav.json";
+    var myChartb = "chartb_map.json";
+    var myChartc = "chartc_classroom.json";
+    var myChartd = "chartd_school.json";
+    var myCharte = "charte_4-C.json";
+    var myChartf = "chartf_results.json";
+    
+
+    vegaEmbed('#Charta', myCharta, {"actions": false});
+    vegaEmbed('#Chartb', myChartb, {"actions": false});
+    vegaEmbed('#Chartc', myChartc, {"actions": false});
+    vegaEmbed('#Chartd', myChartd, {"actions": false});
+    vegaEmbed('#Charte', myCharte, {"actions": false});
+    vegaEmbed('#Chartf', myChartf, {"actions": false});
+</script>
 </html>

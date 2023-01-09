@@ -1,0 +1,33 @@
+
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+        "text": "UK vs USA inflation",
+        "subtitle":"Inflation rate, Average Consumer Prices - Annual percent change (%) - Source: IMF",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+  
+    "data": {"values":[{"Country": "United Kingdom", "Year": "2000", "Inflation rate": 0.8}, {"Country": "United Kingdom", "Year": "2001", "Inflation rate": 1.2}, {"Country": "United Kingdom", "Year": "2002", "Inflation rate": 1.3}, {"Country": "United Kingdom", "Year": "2003", "Inflation rate": 1.4}, {"Country": "United Kingdom", "Year": "2004", "Inflation rate": 1.3}, {"Country": "United Kingdom", "Year": "2005", "Inflation rate": 2.1}, {"Country": "United Kingdom", "Year": "2006", "Inflation rate": 2.3}, {"Country": "United Kingdom", "Year": "2007", "Inflation rate": 2.3}, {"Country": "United Kingdom", "Year": "2008", "Inflation rate": 3.6}, {"Country": "United Kingdom", "Year": "2009", "Inflation rate": 2.2}, {"Country": "United Kingdom", "Year": "2010", "Inflation rate": 3.3}, {"Country": "United Kingdom", "Year": "2011", "Inflation rate": 4.5}, {"Country": "United Kingdom", "Year": "2012", "Inflation rate": 2.8}, {"Country": "United Kingdom", "Year": "2013", "Inflation rate": 2.6}, {"Country": "United Kingdom", "Year": "2014", "Inflation rate": 1.5}, {"Country": "United Kingdom", "Year": "2015", "Inflation rate": 0.0}, {"Country": "United Kingdom", "Year": "2016", "Inflation rate": 0.7}, {"Country": "United Kingdom", "Year": "2017", "Inflation rate": 2.7}, {"Country": "United Kingdom", "Year": "2018", "Inflation rate": 2.5}, {"Country": "United Kingdom", "Year": "2019", "Inflation rate": 1.8}, {"Country": "United Kingdom", "Year": "2020", "Inflation rate": 0.9}, {"Country": "United Kingdom", "Year": "2021", "Inflation rate": 2.6}, {"Country": "United Kingdom", "Year": "2022", "Inflation rate": 9.1}, {"Country": "United States", "Year": "2000", "Inflation rate": 3.4}, {"Country": "United States", "Year": "2001", "Inflation rate": 2.8}, {"Country": "United States", "Year": "2002", "Inflation rate": 1.6}, {"Country": "United States", "Year": "2003", "Inflation rate": 2.3}, {"Country": "United States", "Year": "2004", "Inflation rate": 2.7}, {"Country": "United States", "Year": "2005", "Inflation rate": 3.4}, {"Country": "United States", "Year": "2006", "Inflation rate": 3.2}, {"Country": "United States", "Year": "2007", "Inflation rate": 2.9}, {"Country": "United States", "Year": "2008", "Inflation rate": 3.8}, {"Country": "United States", "Year": "2009", "Inflation rate": -0.3}, {"Country": "United States", "Year": "2010", "Inflation rate": 1.6}, {"Country": "United States", "Year": "2011", "Inflation rate": 3.1}, {"Country": "United States", "Year": "2012", "Inflation rate": 2.1}, {"Country": "United States", "Year": "2013", "Inflation rate": 1.5}, {"Country": "United States", "Year": "2014", "Inflation rate": 1.6}, {"Country": "United States", "Year": "2015", "Inflation rate": 0.1}, {"Country": "United States", "Year": "2016", "Inflation rate": 1.3}, {"Country": "United States", "Year": "2017", "Inflation rate": 2.1}, {"Country": "United States", "Year": "2018", "Inflation rate": 2.4}, {"Country": "United States", "Year": "2019", "Inflation rate": 1.8}, {"Country": "United States", "Year": "2020", "Inflation rate": 1.2}, {"Country": "United States", "Year": "2021", "Inflation rate": 4.7}, {"Country": "United States", "Year": "2022", "Inflation rate": 8.1}]
+    },
+
+    "height":300,
+    "width":300,
+
+    "mark": {
+        "type": "line",
+        "color": "rgb(0,47,167)"},
+
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "title": null}, 
+      "y": {"field": "Inflation rate", "type": "quantitative", "title": null},
+      "color": {"field": "Country", "type": "nominal"}
+      
+    }
+  }
+
+
+  
+

@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
       "text": "Most streamed artists on Spotify",
-      "subtitle":"Shows Top 100 artists, their tracks and their amount of Lead Streams",
+      "subtitle":["Shows Top 100 artists, their tracks and their amount of Lead Streams",
+      "Source: Chartmasters"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -17,7 +18,7 @@
 
   "mark": {
       "type": "circle",
-      "color": "rgb(0,47,167)"
+      "color": "violet"
       },
 
   "encoding": {

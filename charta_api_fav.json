@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": " Figure 1: COVID-19 Timeline - 7 Day Rolling Average",
+    "subtitle": [
+      "COVID cases from: Jan 22th 2020 - Jan 7th 2023",
+      "Source: COVID API, John Hopkins CSSE"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_COVIDAPInew.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "line",
+  "color": "rgb(0,47,167)"},
+  "height": 300,
+  "width": 550,
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "title": null},
+    "y": {"field": "Seven_Day_Average", "type": "quantitative", "title": null},
+    "color": {"field": "Country", "type": "nominal"},
+    "tooltip":[
+        {"field":"Country", "type": "nominal"},
+        {"field":"Seven_Day_Average", "type": "quantitative", "title": "7 Day Rolling Average"},
+        {"field":"Date", "type": "temporal", "title": "Date"}
+      ]
+  },
+  "transform": [
+    {"filter": {"selection": "search_term"}},
+    {
+      "filter": {
+        "field": "Country",
+        "oneOf": ["Argentina",
+        "Brazil",
+        "Canada",
+        "Germany",
+        "India",
+        "Japan",
+        "Korea (South)",
+        "Russian Federation",
+        "Saudi Arabia",
+        "South Africa",
+        "United Kingdom"]
+      }
+    }
+  ],
+  "selection": {
+    "search_term": {
+      "type": "single",
+      "fields": ["Country"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Argentina",
+          "Brazil",
+          "Canada",
+          "Germany",
+          "India",
+          "Japan",
+          "Korea (South)",
+          "Russian Federation",
+          "Saudi Arabia",
+          "South Africa",
+          "United Kingdom"
+        ],
+        "name": "Search Term:"
+      }
+    }
+  }
+}

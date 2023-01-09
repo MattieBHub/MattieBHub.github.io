@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Figure 3a: Comparing In-Classroom School days, March 2020 - April 2021",
+        "subtitle": ["Source: LSE research [1]" ,""],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 12.5, "fontSize":15.5,
+        "anchor": "start",
+        "color": "black"
+      },
+
+    "data": {
+      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/missdaysclassroom.csv"
+    },
+
+    "height": 100,
+    "width": 100,
+
+    "mark": {"type": "bar", "size": 35},
+
+    "encoding": {
+      "x": {
+        "field": "Days",
+        "type": "nominal",
+        "title": null,
+        "axis": {"grid": true, "labelAngle": 30,"labelFontSize": 10}
+      },
+
+      "y": {"field": "Days missed", "type": "quantitative", "title": null},
+      
+      "facet": {
+        "field": "Country",
+        "columns": 4,
+        "title": null,
+        "header": {
+          "titleColor": "black",
+          "labelColor": "black",
+          "labelFontSize": 14
+        }
+
+      },
+      "color": {
+        "field": "Days", "type": "nominal", "scale": {"scheme": "paired"}
+      },
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country"},
+        {"field": "Days missed", "type": "nominal", "title": "Days"},
+        {"field": "Days", "type": "nominal", "title": "Education state"}
+      ]
+    }
+  }

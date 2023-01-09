@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+/* Import a font, from google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* FONTS: */
 
@@ -8,33 +10,179 @@
     font-size: 35px;
 }
 
-h1, h3, p{
-    color:antiquewhite;
+p{
+    color:rgb(17, 17, 17);
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    
+}
+
+h1{
+    color:rgb(17, 17, 17);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 40px;
 }
 
 h2{ 
     color:antiquewhite;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    font-size: 70px;
 }
 
-/* AREAS OF THE PAGE */
+h3{
+    color:rgb(17, 17, 17);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 23px;
+}
+
+/* Areas of the page */
 
 body{
     background-color: rgb(40, 107, 130);
 }
 
+
 .navbar{
     flex:1;
     text-align: center;
     font-size: 18px;
-
 }
 
-/* Links  */
+/* Chapter Background */
+
+.intro{
+    margin: auto;
+    max-width: 1000px;
+    background-color: rgb(202,255,185);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.chapter1{
+    margin: auto;
+    max-width: 1100px;
+    background-color: #58C1C1; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+.chapter2{
+    margin: auto;
+    max-width: 1100px;
+    background-color: #58B4E1; 
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Charts */
+
+.chart{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%;
+    max-width: 1000px;
+    text-align: center;
+    width: 350px;
+}
+
+.map{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%;
+    max-width: 1000px;
+    text-align: center;
+    width: 750px;
+}
+
+.chartlong{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%;
+    max-width: 1000px;
+    text-align: center;
+    width: 800px;
+}
+
+/* .grid{
+    display: grid;
+    max-width: 800px; 
+    grid-column-gap: 1px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.grid > div{
+    background-color: #ffffff;
+    width: 800px;
+}
+
+.dashboard{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 1000px;
+    text-align: center;
+    width: 425px;
+} */
+
+.chartresults{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%;
+    max-width: 1000px;
+    text-align: center;
+    width: 600px;
+}
+
+.chart4-C{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%;
+    max-width: 1000px;
+    text-align: center;
+    width: 500px;
+}
+
+
+/*Links*/
 
 a{
     color: antiquewhite;
@@ -45,7 +193,7 @@ a{
     position: relative;
 }
 
-a:hover {font-size:200%;}
+a:hover {font-size:125%;}
 
 a:link{
     color: antiquewhite;
@@ -56,7 +204,21 @@ a:visited{
     color: antiquewhite;
 }
 
+a.one{
+    color: antiquewhite;
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
 
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:after {color:#0000ff;}
+a.one:hover {font-size:150%; color:#ffcc00;}
+a.one:hover:after {color:#0000ff;}
 
 /*
 a{

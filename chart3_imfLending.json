@@ -2,7 +2,7 @@
 
   "title": {
       "text": "IMF lending Outstanding",
-      "subtitle":"Credit outstanding to all members, SDRs (billions $)",
+      "subtitle":"Credit outstanding to all members, SDRs (billions $) - Sources: FT, IMF",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -19,7 +19,7 @@
 
   "mark": {
     "type": "bar",
-    "color": "rgb(0,47,167)"},
+    "color": "violet"},
 
 "encoding": {
      "x": {

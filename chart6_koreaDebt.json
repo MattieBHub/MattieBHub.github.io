@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
         "text": "General government net debt ",
-        "subtitle":"as a percentage of their GDP (%)    Source: IMF" ,
+        "subtitle":"as a percentage of their GDP (%) - Source: IMF" ,
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",

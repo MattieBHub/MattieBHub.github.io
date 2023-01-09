@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
     
     <title>Mattie's Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
@@ -23,16 +23,12 @@
 </head>
 
 <body>
-
-
     <div class="title">
-
         <h2>Mattie's Portfolio</h2>
         <a style="list-style-type: none;" href="project.html">Project</a>
         <a style="list-style-type: none;" href="index.html">Index</a>
         <a style="list-style-type: none;" href="https://github.com/MattieBHub/MattieBHub.github.io">GitHub</a>
         <p>  </p>
-
     </div>
 
     <div class="myWeek1">
@@ -40,12 +36,14 @@
         <!-- WEEK 1 -->
         <h1>Week 1 - Tasks</h1>
 
-        <h3>Korean Population Data</h3>
+        <h4>Korean Population Data</h4>
 
         <h3>The older they are...</h3>
 
         <p>The first chart tracks Koreas current aging population with future predicitions, compared to other countries.</p>
         <div class="chart" id="Chart1" style = "display:block"></div>
+        
+        <h3>..the harder they fall</h3>
 
         <p>My second chart tracks Korea's current declining population with future predicitions, compared to other countries.</p>
         <div class="chart2" id="Chart2" style = "display:block"> </div>
@@ -148,7 +146,10 @@
             <div class = dashboard id = "Chart16" style = "display:block"></div>
         </div>
 
-        <p>The <a class="one " href="https://colab.research.google.com/drive/1xRGf6QuKJjpVCqZF77W-2jtihvA7IYlL#scrollTo=DCCczEMwmaK1">Colab</a> where I used the ONS API to download all the data for these graphs using a loop</p>
+        <p>
+            The <a class="one" href="https://colab.research.google.com/drive/1xRGf6QuKJjpVCqZF77W-2jtihvA7IYlL#scrollTo=DCCczEMwmaK1">Colab</a> 
+            where I used the ONS API to download all the data for these graphs using a loop
+        </p>
 
     </div> 
 
@@ -163,7 +164,7 @@
         <p> Base Map of Europe</p>
         <div class="chart17" id="Chart17" style = "display:block"> </div>
 
-        <p> Populatrion Growth for Europe in 2021</p>
+        <p> Population Growth for Europe in 2021</p>
         <div class="chart18" id="Chart18" style = "display:block"> </div>
         <p> </p>
         <p> The Graph shows the annual population growth of each of the countries 
@@ -177,8 +178,42 @@
     <div class="myWeek8">
         <!-- WEEK 8-->
         <h1>Week 8 - Tasks</h1>        
-        <h3>Festival of Economics - Big Data</h3>
-        <h3></h3>
+        <h3>Festival of Economics - Price and Wages</h3>
+        <p>In Prices and Wages, the speakers argued that Europe inflation was more volatile 
+            and higher then other regions and that US and UK inflation is similar</p>
+        <div class="chart19_20" id="Chart19" style = "display:block"> </div>
+
+        <div class="chart19_20" id="Chart20" style = "display:block"> </div>
+
+        <p>The first chart argues that other regions have a higher inflation rate in the time period </p>
+        <p>The second shows that they do have similar inflation patterns</p>
+        
+
+    </div>
+
+    <br>
+
+    <div class="myWeek9"> 
+        <!-- WEEK 9-->
+        <h1>Week 9 - Tasks</h1>
+        <h3>Advanced Analysis</h3>
+
+        <div class="chart2" id="Chart21" style = "display:block"> </div>
+
+        <div class="chart22" id="Chart22" style = "display:block"> </div>
+
+    </div>
+
+    <br>
+
+    <div class="myWeek10"> 
+        <!-- WEEK 10-->
+        <h1>Week 10 - Tasks</h1>
+        <h3>Machine Learning</h3>
+
+        <div class="chart" id="Chart23" style = "display:block"> </div>
+
+        <div class="chart" id="Chart24" style = "display:block"> </div>
 
     </div>
 
@@ -206,48 +241,56 @@
     var myChart16 = "chart16_TTB.json"
     var myChart17 = "chart17_map1.json"
     var myChart18 = "chart18_map2.json"
+    var myChart19 = "chart19_worldwideInflation.json"
+    var myChart20 = "chart20_UKvsUSAInflation.json"
+    var myChart21 = "chart21_bubbly.json"
+    var myChart22 = "chart22_histogram.json"
+    var myChart23 = "chart23_machinelearning1.json"
+    var myChart24 = "chart24_machinelearning2.json"
 
-let width = screen.width;
+    let width = screen.width;
+    //SetTimeout around 2s, continous width function?
+    // setTimeout()
 
-if (width > 450) {
-     myChart1 = "chart1_agingPopulation.json";
-     myChart2 = "chart2_decliningPopulation.json";
-     myChart3 = "chart3_imfLending.json"
-     myChart4 = "chart4_imfLendingFixed.json"
-     myChart5 = "chart5_koreaDebt.json"
-     myChart6 = "chart6_koreaDebt.json"
-     myChart7 = "chart7_musicStreams.json"
-     myChart8 = "chart8_TIGE.json"
-     myChart9 = "chart9_TIGI.json"
-     myChart10 = "chart10_TIGB.json"
-     myChart11 = "chart11_TISE.json"
-     myChart12 = "chart12_TISI.json"
-     myChart13 = "chart13_TISB.json"
-     myChart14 = "chart14_TTE.json"
-     myChart15 = "chart15_TTI.json"
-     myChart16 = "chart16_TTB.json"
-     myChart17 = "chart17_map1.json"
-     myChart18 = "chart18_map2.json"
-} else {
-     myChart1 = "chart1_agingPopulation.json";
-     myChart2 = "chart2.2_decliningPopulation.json";
-     myChart3 = "chart3_imfLending.json"
-     myChart4 = "chart4_imfLendingFixed.json"
-     myChart5 = "chart5_koreaDebt.json"
-     myChart6 = "chart6_koreaDebt.json"
-     myChart7 = "chart7_musicStreams.json"
-     myChart8 = "chart8_TIGE.json"
-     myChart9 = "chart9_TIGI.json"
-     myChart10 = "chart10_TIGB.json"
-     myChart11 = "chart11_TISE.json"
-     myChart12 = "chart12_TISI.json"
-     myChart13 = "chart13_TISB.json"
-     myChart14 = "chart14_TTE.json"
-     myChart15 = "chart15_TTI.json"
-     myChart16 = "chart16_TTB.json"
-     myChart17 = "chart17_map1.json"
-     myChart18 = "chart18_map2.json"
-}
+    // if (width > 450) {
+    //     myChart1 = "chart1_agingPopulation.json";
+    //     myChart2 = "chart2_decliningPopulation.json";
+    //     myChart3 = "chart3_imfLending.json"
+    //     myChart4 = "chart4_imfLendingFixed.json"
+    //     myChart5 = "chart5_koreaDebt.json"
+    //     myChart6 = "chart6_koreaDebt.json"
+    //     myChart7 = "chart7_musicStreams.json"
+    //     myChart8 = "chart8_TIGE.json"
+    //     myChart9 = "chart9_TIGI.json"
+    //     myChart10 = "chart10_TIGB.json"
+    //     myChart11 = "chart11_TISE.json"
+    //     myChart12 = "chart12_TISI.json"
+    //     myChart13 = "chart13_TISB.json"
+    //     myChart14 = "chart14_TTE.json"
+    //     myChart15 = "chart15_TTI.json"
+    //     myChart16 = "chart16_TTB.json"
+    //     myChart17 = "chart17_map1.json"
+    //     myChart18 = "chart18_map2.json"
+    // } else {
+    //     myChart1 = "chart1_agingPopulation.json";
+    //     myChart2 = "chart2.2_decliningPopulation.json";
+    //     myChart3 = "chart3_imfLending.json"
+    //     myChart4 = "chart4_imfLendingFixed.json"
+    //     myChart5 = "chart5_koreaDebt.json"
+    //     myChart6 = "chart6_koreaDebt.json"
+    //     myChart7 = "chart7_musicStreams.json"
+    //     myChart8 = "chart8_TIGE.json"
+    //     myChart9 = "chart9_TIGI.json"
+    //     myChart10 = "chart10_TIGB.json"
+    //     myChart11 = "chart11_TISE.json"
+    //     myChart12 = "chart12_TISI.json"
+    //     myChart13 = "chart13_TISB.json"
+    //     myChart14 = "chart14_TTE.json"
+    //     myChart15 = "chart15_TTI.json"
+    //     myChart16 = "chart16_TTB.json"
+    //     myChart17 = "chart17_map1.json"
+    //     myChart18 = "chart18_map2.json"
+    // }
 
 
     // Embed charts:
@@ -269,6 +312,12 @@ if (width > 450) {
     vegaEmbed('#Chart16', myChart16, {"actions": false});
     vegaEmbed('#Chart17', myChart17, {"actions": false});
     vegaEmbed('#Chart18', myChart18, {"actions": false});
+    vegaEmbed('#Chart19', myChart19, {"actions": false});
+    vegaEmbed('#Chart20', myChart20, {"actions": false});
+    vegaEmbed('#Chart21', myChart21, {"actions": false});
+    vegaEmbed('#Chart22', myChart22, {"actions": false});
+    vegaEmbed('#Chart23', myChart23, {"actions": false});
+    vegaEmbed('#Chart24', myChart24, {"actions": false});
 
 
 </script>

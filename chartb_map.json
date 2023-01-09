@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 600,
+  "height": 410,
+
+  "config": {
+    "background": "white",
+    "view": {"stroke": "transparent"},
+    "padding": {"top": 7}
+  },
+    "title": {
+        "text": ["Figure 2: School Closures during the COVID-19 pandemic"
+              ],
+        "subtitle": "Source: ourworldindata.org, 21st Jan 2020 - 31st Dec 2022",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "color": "black",
+        "anchor": "start"
+    },
+    
+  "params": [
+    {
+      "name": "daySelector",
+      "value": 21,
+      "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 31,
+        "step": 1,
+        "name": "Select the Day:"
+      }
+    },
+    {
+      "name": "monthSelector",
+      "value": 1,
+      "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "name": "Select the Month:"
+      }
+    },
+    {
+      "name": "yearSelector",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 2020,
+        "max": 2022,
+        "step": 1,
+        "name": "Select the Year:"
+      }
+    }
+    
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/scc.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.day == daySelector"},
+    {"filter": "datum.month == monthSelector"},
+    {"filter": "datum.year == yearSelector"},
+    {"calculate": "{'0': 'No Measures', '1': 'Recommended', '2': 'Partial Required', '3': 'Total Required'}[datum.school_closures]", "as": "sc"},
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_worldbasenew.geo.json",
+          "format": {"property": "features"}
+        },
+        "key": "properties.name",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ],
+  "projection": {"type": "equalEarth"},
+  "mark": {"type": "geoshape", "stroke": "darkgray", "strokeWidth": 0.5},
+  "encoding": {
+      "color":{
+          "field":"school_closures",
+          "type": "ordinal",
+          "title": "School Closures",
+          "legend": {"labelExpr": "{'0': 'No Measures', '1': 'Recommended', '2': 'Partial Required', '3': 'Total Required'}[datum.label]"},
+          "scale": {
+              "range": ["blue", "yellow", "orange", "red"],
+              "domain": [0,1,2,3]
+            }
+        },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {"field": "sc", "title": "School Closures"}
+    ]
+  }
+}
