@@ -15,7 +15,7 @@
     },
   
     "data": {
-      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_ONS_IKBJ.json",
+      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Portfolio/data_ONS_IKBJ.json",
     "format": {
       "type": "json",
       "property": "years"}

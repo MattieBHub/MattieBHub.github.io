@@ -8,7 +8,7 @@
       "anchor": "start",
       "color": "black"},
   
-  "data":{"url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_IMF_creditOutstanding.csv"},
+  "data":{"url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Portfolio/data_IMF_creditOutstanding.csv"},
 
   "transform": [
     {"calculate": "datum.Totals/1000000000", "as": "billions"}
