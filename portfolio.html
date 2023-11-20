@@ -206,91 +206,35 @@
 
     <br>
 
-    <div class="myWeek10"> 
-        <!-- WEEK 10-->
-        <h1>Week 10 - Tasks</h1>
-        <h3>Machine Learning</h3>
-
-        <div class="chart" id="Chart23" style = "display:block"> </div>
-
-        <div class="chart" id="Chart24" style = "display:block"> </div>
-
-    </div>
-
-
 </body>
 
 
 <script>
     // Define charts:
     var myChart1 = "Uni_Work/Charts/Portfolio/chart1_agingPopulation.json";
-    var myChart2 = "chart2_decliningPopulation.json";
-    var myChart3 = "chart3_imfLending.json"
-    var myChart4 = "chart4_imfLendingFixed.json"
-    var myChart5 = "chart5_koreaDebt.json"
-    var myChart6 = "chart6_koreaDebt.json"
-    var myChart7 = "chart7_musicStreams.json"
-    var myChart8 = "chart8_TIGE.json"
-    var myChart9 = "chart9_TIGI.json"
-    var myChart10 = "chart10_TIGB.json"
-    var myChart11 = "chart11_TISE.json"
-    var myChart12 = "chart12_TISI.json"
-    var myChart13 = "chart13_TISB.json"
-    var myChart14 = "chart14_TTE.json"
-    var myChart15 = "chart15_TTI.json"
-    var myChart16 = "chart16_TTB.json"
-    var myChart17 = "chart17_map1.json"
-    var myChart18 = "chart18_map2.json"
-    var myChart19 = "chart19_worldwideInflation.json"
-    var myChart20 = "chart20_UKvsUSAInflation.json"
-    var myChart21 = "chart21_bubbly.json"
-    var myChart22 = "chart22_histogram.json"
-    var myChart23 = "chart23_machinelearning1.json"
-    var myChart24 = "chart24_machinelearning2.json"
+    var myChart2 = "Uni_Work/Charts/Portfolio/chart2_decliningPopulation.json";
+    var myChart3 = "Uni_Work/Charts/Portfolio/chart3_imfLending.json"
+    var myChart4 = "Uni_Work/Charts/Portfolio/chart4_imfLendingFixed.json"
+    var myChart5 = "Uni_Work/Charts/Portfolio/chart5_koreaDebt.json"
+    var myChart6 = "Uni_Work/Charts/Portfolio/chart6_koreaDebt.json"
+    var myChart7 = "Uni_Work/Charts/Portfolio/chart7_musicStreams.json"
+    var myChart8 = "Uni_Work/Charts/Portfolio/chart8_TIGE.json"
+    var myChart9 = "Uni_Work/Charts/Portfolio/chart9_TIGI.json"
+    var myChart10 = "Uni_Work/Charts/Portfolio/chart10_TIGB.json"
+    var myChart11 = "Uni_Work/Charts/Portfolio/chart11_TISE.json"
+    var myChart12 = "Uni_Work/Charts/Portfolio/chart12_TISI.json"
+    var myChart13 = "Uni_Work/Charts/Portfolio/chart13_TISB.json"
+    var myChart14 = "Uni_Work/Charts/Portfolio/chart14_TTE.json"
+    var myChart15 = "Uni_Work/Charts/Portfolio/chart15_TTI.json"
+    var myChart16 = "Uni_Work/Charts/Portfolio/chart16_TTB.json"
+    var myChart17 = "Uni_Work/Charts/Portfolio/chart17_map1.json"
+    var myChart18 = "Uni_Work/Charts/Portfolio/chart18_map2.json"
+    var myChart19 = "Uni_Work/Charts/Portfolio/chart19_worldwideInflation.json"
+    var myChart20 = "Uni_Work/Charts/Portfolio/chart20_UKvsUSAInflation.json"
+    var myChart21 = "Uni_Work/Charts/Portfolio/chart21_bubbly.json"
+    var myChart22 = "Uni_Work/Charts/Portfolio/chart22_histogram.json"
 
     let width = screen.width;
-    //SetTimeout around 2s, continous width function?
-    // setTimeout()
-
-    // if (width > 450) {
-    //     myChart1 = "chart1_agingPopulation.json";
-    //     myChart2 = "chart2_decliningPopulation.json";
-    //     myChart3 = "chart3_imfLending.json"
-    //     myChart4 = "chart4_imfLendingFixed.json"
-    //     myChart5 = "chart5_koreaDebt.json"
-    //     myChart6 = "chart6_koreaDebt.json"
-    //     myChart7 = "chart7_musicStreams.json"
-    //     myChart8 = "chart8_TIGE.json"
-    //     myChart9 = "chart9_TIGI.json"
-    //     myChart10 = "chart10_TIGB.json"
-    //     myChart11 = "chart11_TISE.json"
-    //     myChart12 = "chart12_TISI.json"
-    //     myChart13 = "chart13_TISB.json"
-    //     myChart14 = "chart14_TTE.json"
-    //     myChart15 = "chart15_TTI.json"
-    //     myChart16 = "chart16_TTB.json"
-    //     myChart17 = "chart17_map1.json"
-    //     myChart18 = "chart18_map2.json"
-    // } else {
-    //     myChart1 = "chart1_agingPopulation.json";
-    //     myChart2 = "chart2.2_decliningPopulation.json";
-    //     myChart3 = "chart3_imfLending.json"
-    //     myChart4 = "chart4_imfLendingFixed.json"
-    //     myChart5 = "chart5_koreaDebt.json"
-    //     myChart6 = "chart6_koreaDebt.json"
-    //     myChart7 = "chart7_musicStreams.json"
-    //     myChart8 = "chart8_TIGE.json"
-    //     myChart9 = "chart9_TIGI.json"
-    //     myChart10 = "chart10_TIGB.json"
-    //     myChart11 = "chart11_TISE.json"
-    //     myChart12 = "chart12_TISI.json"
-    //     myChart13 = "chart13_TISB.json"
-    //     myChart14 = "chart14_TTE.json"
-    //     myChart15 = "chart15_TTI.json"
-    //     myChart16 = "chart16_TTB.json"
-    //     myChart17 = "chart17_map1.json"
-    //     myChart18 = "chart18_map2.json"
-    // }
 
 
     // Embed charts:
@@ -316,9 +260,6 @@
     vegaEmbed('#Chart20', myChart20, {"actions": false});
     vegaEmbed('#Chart21', myChart21, {"actions": false});
     vegaEmbed('#Chart22', myChart22, {"actions": false});
-    vegaEmbed('#Chart23', myChart23, {"actions": false});
-    vegaEmbed('#Chart24', myChart24, {"actions": false});
-
 
 </script>
 
