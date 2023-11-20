@@ -12,7 +12,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_COVIDAPInew.csv",
+    "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Project/data_COVIDAPInew.csv",
     "format": {"type": "csv"}
   },
   "mark": {"type": "line",

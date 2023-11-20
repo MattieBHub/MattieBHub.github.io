@@ -27,7 +27,7 @@
                 "lookup":"properties.name",
                 "from":{
                     "data":{
-                        "url":"https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_worldpopgrowth.csv"},
+                        "url":"https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/main/Uni_Work/Data/Portfolio/data_worldpopgrowth.csv"},
                     "key":"Country Name",
                     "fields":["Population Growth"]
                     }

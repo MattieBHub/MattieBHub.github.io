@@ -56,7 +56,7 @@
     
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/scc.csv",
+    "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Project/scc.csv",
     "format": {"type": "csv"}
   },
   "transform": [
@@ -68,7 +68,7 @@
       "lookup": "Country",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_worldbasenew.geo.json",
+          "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Project/data_worldbasenew.geo.json",
           "format": {"property": "features"}
         },
         "key": "properties.name",

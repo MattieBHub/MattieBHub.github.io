@@ -5,7 +5,7 @@
   "height":400,
   
     "data": {
-      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_geoUSstates.json",
+      "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Unused/data_geoUSstates.json",
       "format": {"property": "features"}},
   
       "projection": {
@@ -18,7 +18,7 @@
   
           "from":{
             "data": {
-              "url":"https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_USstatesCrimeWide.csv"},
+              "url":"https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Unused/data_USstatesCrimeWide.csv"},
               "key": "State",
               "fields": ["Motor Vehicle Theft", "Robbery", "Burglary"]
           }

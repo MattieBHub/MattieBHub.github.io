@@ -10,7 +10,7 @@
     },
   
       "data": {
-        "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/data_AQA.csv",
+        "url": "https://raw.githubusercontent.com/MattieBHub/MattieBHub.github.io/main/Uni_Work/Data/Project/data_AQA.csv",
         "format": {"type": "csv"}
       },
   
